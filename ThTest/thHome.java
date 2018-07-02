@@ -30,7 +30,6 @@ public class thHome {
 		} catch(MalformedURLException e) {
 			e.printStackTrace();
 		}
-		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 	}
