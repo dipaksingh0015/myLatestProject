@@ -18,16 +18,18 @@ public class thHome {
 		
 		//Set Desired Capabilities
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("plateformName","Android");
+//		caps.setCapability("platformName",DesiredCapabilities.android());
+		caps.setCapability("newCommandTimeout","60");
+		caps.setCapability("platformName","Android");
 		caps.setCapability("plateformVersion","8.1");
 		caps.setCapability("deviceName","emulator-5554");
 		caps.setCapability("app","/home/dipak/Android/Sdk/platform-tools/THSigned.apk");
 		caps.setCapability("appPackage","com.mobstac.thehindu");
-		caps.setCapability("appActivity","com.mobstac.thehindu.activity.InitialSetupActivity");
-		caps.setCapability("browserName", "");
-		//caps.setCapability(CapabilityType.BROWSER_NAME,"");
+		//caps.setCapability("appActivity","com.mobstac.thehindu.activity.InitialSetupActivity");
+		//caps.setCapability("browserName", "");
+		caps.setCapability(CapabilityType.BROWSER_NAME,"");
 		caps.setCapability("deviceOrientation","Portrait");
-		caps.setCapability("appWaitActivity","SplashActivity");
+		//caps.setCapability("appWaitActivity","SplashActivity");
 		
 		
 	try {
