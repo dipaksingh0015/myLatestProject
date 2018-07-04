@@ -2,8 +2,9 @@ package thHome;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -37,7 +38,32 @@ public class thHome {
 		} catch(MalformedURLException e) {
 			e.printStackTrace();
 		}
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		//Thread.sleep(5000);
+		
+		driver.findElement(By.id("com.mobstac.thehindu:id/button_feed_save")).click();
+		driver.findElement(By.id("com.mobstac.thehindu:id/button_feed_save")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.id("com.mobstac.thehindu:id/home_layout")).click();
+		driver.findElement(By.id("com.mobstac.thehindu:id/imageview_banner")).click();
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_speak")).click();
+		Thread.sleep(10000);
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_speak")).click();
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_bookmarks")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_bookmarks")).click();
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_textsize")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_textsize")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.mobstac.thehindu:id/action_share_article")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("android:id/contentPanel")).click();
+		driver.findElement(By.id("android.widget.ImageButton")).click();
+		
+		
+		
 		
 	}
 
