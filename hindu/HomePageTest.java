@@ -101,6 +101,7 @@ public class HomePageTest {
 			Thread.sleep(2000);
 			driver.findElement(By.id("android.widget.ImageButton")).click();
 			Thread.sleep(5000);
+		        Thread.sleep(5000);
 			
 		
 			
